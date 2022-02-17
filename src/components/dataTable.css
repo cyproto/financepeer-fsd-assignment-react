@@ -1,0 +1,17 @@
+.MuiTableCell-head {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    font-family: 'Prompt', sans-serif;
+}
+
+.search-bar {
+    position: fixed;
+    top: 30px;
+    width: 400px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: right;
+    place-items: center;
+}

@@ -1,0 +1,19 @@
+.MuiTableCell-head {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    font-family: 'Prompt', sans-serif;
+}
+
+.MuiTableCell-root {
+    font-family: 'Prompt', sans-serif;
+}
+
+.MuiTableRow-root {
+    cursor: pointer;
+}
+
+.MuiTableRow-root:hover {
+    background-color: #F0F0F0;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    transition: 0.5s;
+}

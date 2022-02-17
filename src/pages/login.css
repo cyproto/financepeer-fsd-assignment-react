@@ -1,0 +1,21 @@
+.login-wrapper {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F0F0F0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.signup-text {
+    text-decoration: none;
+    color: #1976d2;
+    margin-left: 20px;
+}
+
+.error-text {
+    color: #F6416C;
+}
