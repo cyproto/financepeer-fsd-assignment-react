@@ -26,6 +26,9 @@
 
 .dashboard-message {
     color: #1FAB89;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .dashboard-note {
@@ -41,4 +44,11 @@
     position: fixed;
     top: 50px;
     background-color: #F6416C !important;
+}
+
+.dashboard-error-msg {
+    color: #F6416C;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    text-align: center;
 }

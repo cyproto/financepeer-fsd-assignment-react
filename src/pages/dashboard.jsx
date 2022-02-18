@@ -11,6 +11,7 @@ const Dashboard = () => {
   const [file, setFile] = useState();
   const [userData, setUserData] = useState();
   const [message, setMessage] = useState();
+  const [errorMessage, setErrorMessage] = useState();
   const [showData, setShowData] = useState();
   const [data, setData] = useState();
   const nav = useNavigate();
@@ -40,8 +41,9 @@ const Dashboard = () => {
         setMessage("Uploaded successfully");
         fetchUserData();
         setFile(null);
+        setErrorMessage("");
       })
-      .catch((err) => console.log(err));
+      .catch((err) => setErrorMessage(err.response.data.error));
   };
 
   const handleUserDataClick = (id) => {
@@ -77,7 +79,10 @@ const Dashboard = () => {
             >
               Upload
             </Button>
-            {message && <span className="dashboard-message">{message}</span>}
+            {message && <h6 className="dashboard-message">{message}</h6>}
+            {errorMessage && (
+              <h6 className="dashboard-error-msg">{errorMessage}</h6>
+            )}
           </div>
           <div className="data-container">
             {userData && (
